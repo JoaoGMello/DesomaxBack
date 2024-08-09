@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DesomaxBack")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5f99262545803dad7edb4a2c3763f50c3129d1e6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b6322d2f4e2e8356fe1e282b9571709ec28b5435")]
 [assembly: System.Reflection.AssemblyProductAttribute("DesomaxBack")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DesomaxBack")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
