@@ -3,12 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\joaom\\OneDrive\\Documentos\\Projetos\\DesomaxBack\\DesomaxBack\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C451C209-065F-4D31-8FE4-40F79D29E8D4}|DesomaxBack\\DesomaxBack.csproj|c:\\users\\joaom\\onedrive\\documentos\\projetos\\desomaxback\\desomaxback\\desomaxback\\migrations\\20240809142642_creatingusertable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C451C209-065F-4D31-8FE4-40F79D29E8D4}|DesomaxBack\\DesomaxBack.csproj|solutionrelative:desomaxback\\migrations\\20240809142642_creatingusertable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C451C209-065F-4D31-8FE4-40F79D29E8D4}|DesomaxBack\\DesomaxBack.csproj|c:\\users\\joaom\\onedrive\\documentos\\projetos\\desomaxback\\desomaxback\\desomaxback\\context\\desomaxcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C451C209-065F-4D31-8FE4-40F79D29E8D4}|DesomaxBack\\DesomaxBack.csproj|solutionrelative:desomaxback\\context\\desomaxcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C451C209-065F-4D31-8FE4-40F79D29E8D4}|DesomaxBack\\DesomaxBack.csproj|c:\\users\\joaom\\onedrive\\documentos\\projetos\\desomaxback\\desomaxback\\desomaxback\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C451C209-065F-4D31-8FE4-40F79D29E8D4}|DesomaxBack\\DesomaxBack.csproj|solutionrelative:desomaxback\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C451C209-065F-4D31-8FE4-40F79D29E8D4}|DesomaxBack\\DesomaxBack.csproj|c:\\users\\joaom\\onedrive\\documentos\\projetos\\desomaxback\\desomaxback\\desomaxback\\controllers\\carcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C451C209-065F-4D31-8FE4-40F79D29E8D4}|DesomaxBack\\DesomaxBack.csproj|solutionrelative:desomaxback\\controllers\\carcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C451C209-065F-4D31-8FE4-40F79D29E8D4}|DesomaxBack\\DesomaxBack.csproj|c:\\users\\joaom\\onedrive\\documentos\\projetos\\desomaxback\\desomaxback\\desomaxback\\repositories\\carrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C451C209-065F-4D31-8FE4-40F79D29E8D4}|DesomaxBack\\DesomaxBack.csproj|solutionrelative:desomaxback\\repositories\\carrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C451C209-065F-4D31-8FE4-40F79D29E8D4}|DesomaxBack\\DesomaxBack.csproj|c:\\users\\joaom\\onedrive\\documentos\\projetos\\desomaxback\\desomaxback\\desomaxback\\viewmodels\\cardetailsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C451C209-065F-4D31-8FE4-40F79D29E8D4}|DesomaxBack\\DesomaxBack.csproj|solutionrelative:desomaxback\\viewmodels\\cardetailsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C451C209-065F-4D31-8FE4-40F79D29E8D4}|DesomaxBack\\DesomaxBack.csproj|c:\\users\\joaom\\onedrive\\documentos\\projetos\\desomaxback\\desomaxback\\desomaxback\\viewmodels\\insertcarviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C451C209-065F-4D31-8FE4-40F79D29E8D4}|DesomaxBack\\DesomaxBack.csproj|solutionrelative:desomaxback\\viewmodels\\insertcarviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C451C209-065F-4D31-8FE4-40F79D29E8D4}|DesomaxBack\\DesomaxBack.csproj|c:\\users\\joaom\\onedrive\\documentos\\projetos\\desomaxback\\desomaxback\\desomaxback\\common\\jsonreturn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -17,14 +33,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{C451C209-065F-4D31-8FE4-40F79D29E8D4}|DesomaxBack\\DesomaxBack.csproj|c:\\users\\joaom\\onedrive\\documentos\\projetos\\desomaxback\\desomaxback\\desomaxback\\common\\codereturn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C451C209-065F-4D31-8FE4-40F79D29E8D4}|DesomaxBack\\DesomaxBack.csproj|solutionrelative:desomaxback\\common\\codereturn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C451C209-065F-4D31-8FE4-40F79D29E8D4}|DesomaxBack\\DesomaxBack.csproj|c:\\users\\joaom\\onedrive\\documentos\\projetos\\desomaxback\\desomaxback\\desomaxback\\interfaces\\icarrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C451C209-065F-4D31-8FE4-40F79D29E8D4}|DesomaxBack\\DesomaxBack.csproj|solutionrelative:desomaxback\\interfaces\\icarrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C451C209-065F-4D31-8FE4-40F79D29E8D4}|DesomaxBack\\DesomaxBack.csproj|c:\\users\\joaom\\onedrive\\documentos\\projetos\\desomaxback\\desomaxback\\desomaxback\\viewmodels\\insertcarviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C451C209-065F-4D31-8FE4-40F79D29E8D4}|DesomaxBack\\DesomaxBack.csproj|solutionrelative:desomaxback\\viewmodels\\insertcarviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,11 +42,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 266,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "20240809142642_CreatingUserTable.cs",
+              "DocumentMoniker": "C:\\Users\\joaom\\OneDrive\\Documentos\\Projetos\\DesomaxBack\\DesomaxBack\\DesomaxBack\\Migrations\\20240809142642_CreatingUserTable.cs",
+              "RelativeDocumentMoniker": "DesomaxBack\\Migrations\\20240809142642_CreatingUserTable.cs",
+              "ToolTip": "C:\\Users\\joaom\\OneDrive\\Documentos\\Projetos\\DesomaxBack\\DesomaxBack\\DesomaxBack\\Migrations\\20240809142642_CreatingUserTable.cs",
+              "RelativeToolTip": "DesomaxBack\\Migrations\\20240809142642_CreatingUserTable.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-09T14:26:42.49Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DesomaxContext.cs",
+              "DocumentMoniker": "C:\\Users\\joaom\\OneDrive\\Documentos\\Projetos\\DesomaxBack\\DesomaxBack\\DesomaxBack\\Context\\DesomaxContext.cs",
+              "RelativeDocumentMoniker": "DesomaxBack\\Context\\DesomaxContext.cs",
+              "ToolTip": "C:\\Users\\joaom\\OneDrive\\Documentos\\Projetos\\DesomaxBack\\DesomaxBack\\DesomaxBack\\Context\\DesomaxContext.cs",
+              "RelativeToolTip": "DesomaxBack\\Context\\DesomaxContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-09T14:25:35.291Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\joaom\\OneDrive\\Documentos\\Projetos\\DesomaxBack\\DesomaxBack\\DesomaxBack\\Models\\User.cs",
+              "RelativeDocumentMoniker": "DesomaxBack\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\joaom\\OneDrive\\Documentos\\Projetos\\DesomaxBack\\DesomaxBack\\DesomaxBack\\Models\\User.cs",
+              "RelativeToolTip": "DesomaxBack\\Models\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-09T14:16:48.903Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CarDetailsViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\joaom\\OneDrive\\Documentos\\Projetos\\DesomaxBack\\DesomaxBack\\DesomaxBack\\ViewModels\\CarDetailsViewModel.cs",
+              "RelativeDocumentMoniker": "DesomaxBack\\ViewModels\\CarDetailsViewModel.cs",
+              "ToolTip": "C:\\Users\\joaom\\OneDrive\\Documentos\\Projetos\\DesomaxBack\\DesomaxBack\\DesomaxBack\\ViewModels\\CarDetailsViewModel.cs",
+              "RelativeToolTip": "DesomaxBack\\ViewModels\\CarDetailsViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-09T13:56:56.886Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "CodeReturn.cs",
               "DocumentMoniker": "C:\\Users\\joaom\\OneDrive\\Documentos\\Projetos\\DesomaxBack\\DesomaxBack\\DesomaxBack\\Common\\CodeReturn.cs",
               "RelativeDocumentMoniker": "DesomaxBack\\Common\\CodeReturn.cs",
@@ -46,12 +106,11 @@
               "RelativeToolTip": "DesomaxBack\\Common\\CodeReturn.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-08T17:49:09.301Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-08T17:49:09.301Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "JsonReturn.cs",
               "DocumentMoniker": "C:\\Users\\joaom\\OneDrive\\Documentos\\Projetos\\DesomaxBack\\DesomaxBack\\DesomaxBack\\Common\\JsonReturn.cs",
               "RelativeDocumentMoniker": "DesomaxBack\\Common\\JsonReturn.cs",
@@ -70,46 +129,20 @@
               "RelativeDocumentMoniker": "DesomaxBack\\ViewModels\\InsertCarViewModel.cs",
               "ToolTip": "C:\\Users\\joaom\\OneDrive\\Documentos\\Projetos\\DesomaxBack\\DesomaxBack\\DesomaxBack\\ViewModels\\InsertCarViewModel.cs",
               "RelativeToolTip": "DesomaxBack\\ViewModels\\InsertCarViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAgAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAcAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-08T17:38:07.983Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CarRepository.cs",
-              "DocumentMoniker": "C:\\Users\\joaom\\OneDrive\\Documentos\\Projetos\\DesomaxBack\\DesomaxBack\\DesomaxBack\\Repositories\\CarRepository.cs",
-              "RelativeDocumentMoniker": "DesomaxBack\\Repositories\\CarRepository.cs",
-              "ToolTip": "C:\\Users\\joaom\\OneDrive\\Documentos\\Projetos\\DesomaxBack\\DesomaxBack\\DesomaxBack\\Repositories\\CarRepository.cs",
-              "RelativeToolTip": "DesomaxBack\\Repositories\\CarRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACsAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-08T12:54:14.524Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ICarRepository.cs",
-              "DocumentMoniker": "C:\\Users\\joaom\\OneDrive\\Documentos\\Projetos\\DesomaxBack\\DesomaxBack\\DesomaxBack\\Interfaces\\ICarRepository.cs",
-              "RelativeDocumentMoniker": "DesomaxBack\\Interfaces\\ICarRepository.cs",
-              "ToolTip": "C:\\Users\\joaom\\OneDrive\\Documentos\\Projetos\\DesomaxBack\\DesomaxBack\\DesomaxBack\\Interfaces\\ICarRepository.cs",
-              "RelativeToolTip": "DesomaxBack\\Interfaces\\ICarRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAA1AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-08T12:54:01.27Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "CarController.cs",
               "DocumentMoniker": "C:\\Users\\joaom\\OneDrive\\Documentos\\Projetos\\DesomaxBack\\DesomaxBack\\DesomaxBack\\Controllers\\CarController.cs",
               "RelativeDocumentMoniker": "DesomaxBack\\Controllers\\CarController.cs",
               "ToolTip": "C:\\Users\\joaom\\OneDrive\\Documentos\\Projetos\\DesomaxBack\\DesomaxBack\\DesomaxBack\\Controllers\\CarController.cs",
               "RelativeToolTip": "DesomaxBack\\Controllers\\CarController.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAAYwC8AAAAIAAAA",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAiwCQAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-08T12:42:31.077Z",
               "EditorCaption": ""

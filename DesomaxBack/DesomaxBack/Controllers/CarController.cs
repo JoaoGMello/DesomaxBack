@@ -1,7 +1,6 @@
 ﻿using Azure.Core;
 using DesomaxBack.Common;
 using DesomaxBack.Context;
-using DesomaxBack.Interfaces;
 using DesomaxBack.Models;
 using DesomaxBack.ViewModels;
 using Microsoft.AspNetCore.Identity;
@@ -61,6 +60,64 @@ namespace DesomaxBack.Controllers
             {
                 throw new Exception(ex.Message);
             }
+        }
+
+        [HttpGet]
+        [Route("GetCarById")]
+        public async Task<ActionResult<Car>> GetCarById(string cardId)
+        {
+            var car = _context.Cars.FirstOrDefault(x => x.Id.ToString() == cardId);
+
+            if (car == null)
+            {
+                return NotFound("Carro não encontrado");
+            }
+
+            return Ok(car);
+        }
+
+        [HttpPut]
+        [Route("UpdateCar")]
+        public async Task<ActionResult<List<Car>>> UpdateCar(CarDetailsViewModel carDetailsViewModel)
+        {
+            try
+            {
+                var car = _context.Cars.FirstOrDefault(x => x.Id.ToString() == carDetailsViewModel.Id);
+
+                if (car == null)
+                {
+                    return NotFound("Carro não encontrado");
+                }
+
+                car.Name = carDetailsViewModel.Name;
+                car.Description = carDetailsViewModel.Description;
+                car.ChangeDate = DateTime.Now;
+
+                _context.SaveChanges();
+
+                return Ok("Carro atualizado com sucesso!");
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+        [HttpDelete]
+        [Route("DeleteCar")]
+        public async Task<ActionResult<Car>> DeleteCar(string cardId)
+        {
+            var car = _context.Cars.FirstOrDefault(x => x.Id.ToString() == cardId);
+
+            if (car == null)
+            {
+                return NotFound("Carro não encontrado");
+            }
+
+            _context.Cars.Remove(car);
+            _context.SaveChanges();
+
+            return Ok("Carro removido com sucesso!");
         }
     }
 }
