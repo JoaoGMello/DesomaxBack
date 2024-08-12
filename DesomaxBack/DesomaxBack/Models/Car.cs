@@ -11,6 +11,7 @@ namespace DesomaxBack.Models
         public string? Year { get; set; }
         public float Price { get; set; }
         public string? Image {  get; set; }
+        public string? Color { get; set; }
 
         [ForeignKey("User")]
         public Guid? UserId { get; set; }

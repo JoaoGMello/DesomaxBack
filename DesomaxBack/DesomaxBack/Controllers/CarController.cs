@@ -6,6 +6,8 @@ using DesomaxBack.ViewModels;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using static System.Net.Mime.MediaTypeNames;
+using System.Drawing;
 
 namespace DesomaxBack.Controllers
 {
@@ -31,6 +33,13 @@ namespace DesomaxBack.Controllers
                     Id = Guid.NewGuid(),
                     Name = insertCarViewModel.Name ?? "",
                     Description = insertCarViewModel.Description ?? "",
+                    Image = insertCarViewModel.Image ?? "",
+                    Price = insertCarViewModel.Price,
+                    Brand = insertCarViewModel.Brand ?? "",
+                    Model = insertCarViewModel.Model ?? "",
+                    Year = insertCarViewModel.Year ?? "",
+                    Color = insertCarViewModel.Color ?? "",
+                    UserId = Guid.Parse(insertCarViewModel.UserId),
                     Excluded = false,
                     InclusionDate = DateTime.Now,
                     ChangeDate = DateTime.Now,
@@ -91,6 +100,13 @@ namespace DesomaxBack.Controllers
 
                 car.Name = carDetailsViewModel.Name;
                 car.Description = carDetailsViewModel.Description;
+                car.Image = carDetailsViewModel.Image ?? "";
+                car.Price = carDetailsViewModel.Price;
+                car.Brand = carDetailsViewModel.Brand ?? "";
+                car.Model = carDetailsViewModel.Model ?? "";
+                car.Year = carDetailsViewModel.Year ?? "";
+                car.Color = carDetailsViewModel.Color ?? "";
+                car.UserId = Guid.Parse(carDetailsViewModel.UserId);
                 car.ChangeDate = DateTime.Now;
 
                 _context.SaveChanges();
