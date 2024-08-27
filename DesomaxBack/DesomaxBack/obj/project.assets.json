@@ -72,6 +72,15 @@
           }
         }
       },
+      "Microsoft.AspNet.Cors/5.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/System.Web.Cors.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Web.Cors.dll": {}
+        }
+      },
       "Microsoft.Bcl.AsyncInterfaces/6.0.0": {
         "type": "package",
         "compile": {
@@ -1704,6 +1713,20 @@
         "lib/netstandard2.0/Humanizer.dll",
         "lib/netstandard2.0/Humanizer.xml",
         "logo.png"
+      ]
+    },
+    "Microsoft.AspNet.Cors/5.3.0": {
+      "sha512": "GmnL9NNGTheEcUVSzjnFaMaCEIwWdvP6mBed1ux/7M0D2yc+uzZ6UN/gAA5mva1BZmah0G+F+MVaPkoValWpmQ==",
+      "type": "package",
+      "path": "microsoft.aspnet.cors/5.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "NET.icon.png",
+        "NET_Library_EULA_ENU.txt",
+        "lib/net45/System.Web.Cors.dll",
+        "microsoft.aspnet.cors.5.3.0.nupkg.sha512",
+        "microsoft.aspnet.cors.nuspec"
       ]
     },
     "Microsoft.Bcl.AsyncInterfaces/6.0.0": {
@@ -4589,6 +4612,7 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "Dapper >= 2.1.35",
+      "Microsoft.AspNet.Cors >= 5.3.0",
       "Microsoft.EntityFrameworkCore >= 8.0.7",
       "Microsoft.EntityFrameworkCore.Design >= 8.0.7",
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.7",
@@ -4598,19 +4622,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\joaom\\.nuget\\packages\\": {}
+    "C:\\Users\\João Gabriel\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\joaom\\OneDrive\\Documentos\\Projetos\\DesomaxBack\\DesomaxBack\\DesomaxBack\\DesomaxBack.csproj",
+      "projectUniqueName": "C:\\Users\\João Gabriel\\Documents\\Projetos\\DesomaxBack\\DesomaxBack\\DesomaxBack\\DesomaxBack.csproj",
       "projectName": "DesomaxBack",
-      "projectPath": "C:\\Users\\joaom\\OneDrive\\Documentos\\Projetos\\DesomaxBack\\DesomaxBack\\DesomaxBack\\DesomaxBack.csproj",
-      "packagesPath": "C:\\Users\\joaom\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\joaom\\OneDrive\\Documentos\\Projetos\\DesomaxBack\\DesomaxBack\\DesomaxBack\\obj\\",
+      "projectPath": "C:\\Users\\João Gabriel\\Documents\\Projetos\\DesomaxBack\\DesomaxBack\\DesomaxBack\\DesomaxBack.csproj",
+      "packagesPath": "C:\\Users\\João Gabriel\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\João Gabriel\\Documents\\Projetos\\DesomaxBack\\DesomaxBack\\DesomaxBack\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\joaom\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\João Gabriel\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4645,6 +4669,10 @@
           "Dapper": {
             "target": "Package",
             "version": "[2.1.35, )"
+          },
+          "Microsoft.AspNet.Cors": {
+            "target": "Package",
+            "version": "[5.3.0, )"
           },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
@@ -4697,5 +4725,17 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "O pacote 'Microsoft.AspNet.Cors 5.3.0' foi restaurado usando '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' em vez da estrutura de destino do projeto 'net8.0'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
+      "libraryId": "Microsoft.AspNet.Cors",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
 }

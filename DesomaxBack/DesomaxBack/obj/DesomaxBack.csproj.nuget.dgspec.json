@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\joaom\\OneDrive\\Documentos\\Projetos\\DesomaxBack\\DesomaxBack\\DesomaxBack\\DesomaxBack.csproj": {}
+    "C:\\Users\\João Gabriel\\Documents\\Projetos\\DesomaxBack\\DesomaxBack\\DesomaxBack\\DesomaxBack.csproj": {}
   },
   "projects": {
-    "C:\\Users\\joaom\\OneDrive\\Documentos\\Projetos\\DesomaxBack\\DesomaxBack\\DesomaxBack\\DesomaxBack.csproj": {
+    "C:\\Users\\João Gabriel\\Documents\\Projetos\\DesomaxBack\\DesomaxBack\\DesomaxBack\\DesomaxBack.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\joaom\\OneDrive\\Documentos\\Projetos\\DesomaxBack\\DesomaxBack\\DesomaxBack\\DesomaxBack.csproj",
+        "projectUniqueName": "C:\\Users\\João Gabriel\\Documents\\Projetos\\DesomaxBack\\DesomaxBack\\DesomaxBack\\DesomaxBack.csproj",
         "projectName": "DesomaxBack",
-        "projectPath": "C:\\Users\\joaom\\OneDrive\\Documentos\\Projetos\\DesomaxBack\\DesomaxBack\\DesomaxBack\\DesomaxBack.csproj",
-        "packagesPath": "C:\\Users\\joaom\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\joaom\\OneDrive\\Documentos\\Projetos\\DesomaxBack\\DesomaxBack\\DesomaxBack\\obj\\",
+        "projectPath": "C:\\Users\\João Gabriel\\Documents\\Projetos\\DesomaxBack\\DesomaxBack\\DesomaxBack\\DesomaxBack.csproj",
+        "packagesPath": "C:\\Users\\João Gabriel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\João Gabriel\\Documents\\Projetos\\DesomaxBack\\DesomaxBack\\DesomaxBack\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\joaom\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\João Gabriel\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -49,6 +49,10 @@
             "Dapper": {
               "target": "Package",
               "version": "[2.1.35, )"
+            },
+            "Microsoft.AspNet.Cors": {
+              "target": "Package",
+              "version": "[5.3.0, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
