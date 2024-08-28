@@ -9,6 +9,8 @@ using System.Reflection;
 
 namespace DesomaxBack.Controllers
 {
+    [Route("api/[controller]")]
+    [ApiController]
     public class UserController : Controller
     {
         private readonly DesomaxContext _context;
