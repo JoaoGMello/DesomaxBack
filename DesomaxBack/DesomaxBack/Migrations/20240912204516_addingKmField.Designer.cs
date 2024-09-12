@@ -4,6 +4,7 @@ using DesomaxBack.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DesomaxBack.Migrations
 {
     [DbContext(typeof(DesomaxContext))]
-    partial class DesomaxContextModelSnapshot : ModelSnapshot
+    [Migration("20240912204516_addingKmField")]
+    partial class addingKmField
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -52,18 +55,14 @@ namespace DesomaxBack.Migrations
                     b.Property<string>("Km")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<bool>("Like")
-                        .HasColumnType("bit");
-
                     b.Property<string>("Model")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<decimal>("Price")
-                        .HasPrecision(18, 3)
-                        .HasColumnType("decimal(18,3)");
+                    b.Property<float>("Price")
+                        .HasColumnType("real");
 
                     b.Property<Guid?>("UserId")
                         .HasColumnType("UniqueIdentifier");

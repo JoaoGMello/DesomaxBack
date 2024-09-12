@@ -39,6 +39,7 @@ namespace DesomaxBack.Controllers
                     Model = insertCarViewModel.Model ?? "",
                     Year = insertCarViewModel.Year ?? "",
                     Color = insertCarViewModel.Color ?? "",
+                    Km = insertCarViewModel.Km ?? "",
                     UserId = Guid.Parse(insertCarViewModel.UserId),
                     Excluded = false,
                     InclusionDate = DateTime.Now,
@@ -57,11 +58,27 @@ namespace DesomaxBack.Controllers
 
         [HttpGet]
         [Route("GetAllCars")]
-        public async Task<ActionResult<List<Car>>> GetAllCars()
+        public async Task<ActionResult<List<CarDetailsViewModel>>> GetAllCars()
         {
             try
-            { 
-                var cars = await _context.Cars.ToListAsync();
+            {
+                var cars = (from c in _context.Cars.Where(x => x.Excluded == false)
+                               join u in _context.Users on c.UserId equals u.Id
+
+                               select new CarDetailsViewModel
+                               {
+                                   Id = c.Id.ToString(),
+                                   Model = c.Model ?? "",
+                                   Brand = c.Brand ?? "",
+                                   Year = c.Year ?? "",
+                                   Price = c.Price,
+                                   Description= c.Description ?? "",
+                                   Image = c.Image ?? "",
+                                   Km = c.Km ?? "",
+                                   City = u.City ?? "",
+                                   State = u.State ?? "",
+                                   UserId = c.UserId.ToString() ?? "",
+                               }).AsEnumerable();
 
                 return Ok(cars);
             }
@@ -106,6 +123,7 @@ namespace DesomaxBack.Controllers
                 car.Model = carDetailsViewModel.Model ?? "";
                 car.Year = carDetailsViewModel.Year ?? "";
                 car.Color = carDetailsViewModel.Color ?? "";
+                car.Km = carDetailsViewModel.Km ?? "";
                 car.UserId = Guid.Parse(carDetailsViewModel.UserId);
                 car.ChangeDate = DateTime.Now;
 

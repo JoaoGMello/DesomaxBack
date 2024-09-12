@@ -29,6 +29,7 @@ namespace DesomaxBack.Controllers
                 _context.Users.Add(new User()
                 {
                     Id = Guid.NewGuid(),
+                    UserName = insertUserViewModel.UserName ?? "",
                     FirstName = insertUserViewModel.FirstName ?? "",
                     LastName = insertUserViewModel.LastName ?? "",
                     Email = insertUserViewModel.Email ?? "",
@@ -70,11 +71,11 @@ namespace DesomaxBack.Controllers
             }
         }
 
-        [HttpGet]
-        [Route("GetUserById")]
-        public async Task<ActionResult<User>> GetUserById(string userId)
+        [HttpPost]
+        [Route("GetUserByNameAndPassword")]
+        public async Task<ActionResult<User>> GetUserByNameAndPassword(LoginViewModel loginViewModel)
         {
-            var user = _context.Users.FirstOrDefault(x => x.Id.ToString() == userId);
+            var user = _context.Users.FirstOrDefault(x => x.UserName == loginViewModel.UserName && x.Password == loginViewModel.Password);
 
             if (user == null)
             {

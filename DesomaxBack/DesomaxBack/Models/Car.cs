@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace DesomaxBack.Models
 {
@@ -9,9 +10,12 @@ namespace DesomaxBack.Models
         public string? Brand { get; set; }
         public string? Model { get; set; }
         public string? Year { get; set; }
-        public float Price { get; set; }
+        [Precision(18, 3)]
+        public decimal Price { get; set; }
         public string? Image {  get; set; }
         public string? Color { get; set; }
+        public string? Km { get; set; }
+        public bool Like { get; set; }
 
         [ForeignKey("User")]
         public Guid? UserId { get; set; }
