@@ -137,6 +137,32 @@ namespace DesomaxBack.Controllers
             }
         }
 
+        [HttpPut]
+        [Route("LikeCar")]
+        public async Task<ActionResult<List<Car>>> LikeCar(LikeCarViewModel likeCarViewModel)
+        {
+            try
+            {
+                var car = _context.Cars.FirstOrDefault(x => x.Id.ToString() == likeCarViewModel.CarId);
+
+                if (car == null)
+                {
+                    return NotFound("Carro não encontrado");
+                }
+
+                car.Like = likeCarViewModel.Like;
+                car.ChangeDate = DateTime.Now;
+
+                _context.SaveChanges();
+
+                return Ok("Carro atualizado com sucesso!");
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
         [HttpDelete]
         [Route("DeleteCar")]
         public async Task<ActionResult<Car>> DeleteCar(string cardId)

@@ -85,6 +85,20 @@ namespace DesomaxBack.Controllers
             return Ok(user);
         }
 
+        [HttpPost]
+        [Route("GetUserById")]
+        public async Task<ActionResult<User>> GetUserById(UserIdViewModel userIdViewModel)
+        {
+            var user = _context.Users.FirstOrDefault(x => x.Id.ToString() == userIdViewModel.UserId);
+
+            if (user == null)
+            {
+                return NotFound("Usuário não encontrado");
+            }
+
+            return Ok(user);
+        }
+
         [HttpPut]
         [Route("UpdateUser")]
         public async Task<ActionResult<List<User>>> UpdateUser(UserDetailsViewModel userDetailsViewModel)
