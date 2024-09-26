@@ -78,6 +78,7 @@ namespace DesomaxBack.Controllers
                                    City = u.City ?? "",
                                    State = u.State ?? "",
                                    UserId = c.UserId.ToString() ?? "",
+                                   Like =  c.Like,
                                }).AsEnumerable();
 
                 return Ok(cars);
