@@ -89,18 +89,70 @@ namespace DesomaxBack.Controllers
             }
         }
 
-        [HttpGet]
-        [Route("GetCarById")]
-        public async Task<ActionResult<Car>> GetCarById(string cardId)
+        [HttpPost]
+        [Route("GetCarsByUserId")]
+        public async Task<ActionResult<List<CarDetailsViewModel>>> GetCarsByUserId(UserIdViewModel userIdViewModel)
         {
-            var car = _context.Cars.FirstOrDefault(x => x.Id.ToString() == cardId);
+            try
+            {
+                var cars = (from c in _context.Cars.Where(x => x.Excluded == false && x.UserId.ToString() == userIdViewModel.UserId)
+                            join u in _context.Users on c.UserId equals u.Id
 
-            if (car == null)
+                            select new CarDetailsViewModel
+                            {
+                                Id = c.Id.ToString(),
+                                Model = c.Model ?? "",
+                                Brand = c.Brand ?? "",
+                                Year = c.Year ?? "",
+                                Price = c.Price,
+                                Description = c.Description ?? "",
+                                Image = c.Image ?? "",
+                                Km = c.Km ?? "",
+                                City = u.City ?? "",
+                                State = u.State ?? "",
+                                UserId = c.UserId.ToString() ?? "",
+                                Like = c.Like,
+                            }).AsEnumerable();
+
+                return Ok(cars);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+        [HttpPost]
+        [Route("GetCarById")]
+        public async Task<ActionResult<CarDetailsViewModel>> GetCarById(CarIdViewModel carIdViewModel)
+        {
+            var carDetails = (from c in _context.Cars.Where(x => x.Id.ToString() == carIdViewModel.CarId)
+                              join u in _context.Users on c.UserId equals u.Id
+
+                              select new CarDetailsViewModel
+                              {
+                                  Id = c.Id.ToString(),
+                                  Model = c.Model ?? "",
+                                  Brand = c.Brand ?? "",
+                                  Year = c.Year ?? "",
+                                  Price = c.Price,
+                                  Description = c.Description ?? "",
+                                  Image = c.Image ?? "",
+                                  Km = c.Km ?? "",
+                                  City = u.City ?? "",
+                                  State = u.State ?? "",
+                                  UserId = c.UserId.ToString() ?? "",
+                                  Seller = $"{u.FirstName} {u.LastName}",
+                                  Color = c.Color ?? "",
+                                  Like = c.Like,
+                              });
+
+            if (carDetails == null)
             {
                 return NotFound("Carro não encontrado");
             }
 
-            return Ok(car);
+            return Ok(carDetails);
         }
 
         [HttpPut]
@@ -125,7 +177,6 @@ namespace DesomaxBack.Controllers
                 car.Year = carDetailsViewModel.Year ?? "";
                 car.Color = carDetailsViewModel.Color ?? "";
                 car.Km = carDetailsViewModel.Km ?? "";
-                car.UserId = Guid.Parse(carDetailsViewModel.UserId);
                 car.ChangeDate = DateTime.Now;
 
                 _context.SaveChanges();

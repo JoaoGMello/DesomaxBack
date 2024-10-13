@@ -13,6 +13,7 @@
         public string? Color { get; set; }
         public string? Km { get; set; }
         public string UserId { get; set; }
+        public string Seller { get; set; }
         public string City { get; set; }
         public string State { get; set; }
         public bool Like { get; set; }
