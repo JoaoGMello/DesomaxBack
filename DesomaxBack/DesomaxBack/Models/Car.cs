@@ -14,7 +14,8 @@ namespace DesomaxBack.Models
         public decimal Price { get; set; }
         public string? Image {  get; set; }
         public string? Color { get; set; }
-        public string? Km { get; set; }
+        [Precision(18, 3)]
+        public decimal Km { get; set; }
         public bool Like { get; set; }
 
         [ForeignKey("User")]

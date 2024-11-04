@@ -39,7 +39,7 @@ namespace DesomaxBack.Controllers
                     Model = insertCarViewModel.Model ?? "",
                     Year = insertCarViewModel.Year ?? "",
                     Color = insertCarViewModel.Color ?? "",
-                    Km = insertCarViewModel.Km ?? "",
+                    Km = insertCarViewModel.Km,
                     UserId = Guid.Parse(insertCarViewModel.UserId),
                     Excluded = false,
                     InclusionDate = DateTime.Now,
@@ -74,7 +74,7 @@ namespace DesomaxBack.Controllers
                                    Price = c.Price,
                                    Description= c.Description ?? "",
                                    Image = c.Image ?? "",
-                                   Km = c.Km ?? "",
+                                   Km = c.Km,
                                    City = u.City ?? "",
                                    State = u.State ?? "",
                                    UserId = c.UserId.ToString() ?? "",
@@ -107,7 +107,7 @@ namespace DesomaxBack.Controllers
                                 Price = c.Price,
                                 Description = c.Description ?? "",
                                 Image = c.Image ?? "",
-                                Km = c.Km ?? "",
+                                Km = c.Km,
                                 City = u.City ?? "",
                                 State = u.State ?? "",
                                 UserId = c.UserId.ToString() ?? "",
@@ -138,11 +138,12 @@ namespace DesomaxBack.Controllers
                                   Price = c.Price,
                                   Description = c.Description ?? "",
                                   Image = c.Image ?? "",
-                                  Km = c.Km ?? "",
+                                  Km = c.Km,
                                   City = u.City ?? "",
                                   State = u.State ?? "",
                                   UserId = c.UserId.ToString() ?? "",
                                   Seller = $"{u.FirstName} {u.LastName}",
+                                  EmailSeller = u.Email ?? "",
                                   Color = c.Color ?? "",
                                   Like = c.Like,
                               });
@@ -176,7 +177,7 @@ namespace DesomaxBack.Controllers
                 car.Model = carDetailsViewModel.Model ?? "";
                 car.Year = carDetailsViewModel.Year ?? "";
                 car.Color = carDetailsViewModel.Color ?? "";
-                car.Km = carDetailsViewModel.Km ?? "";
+                car.Km = carDetailsViewModel.Km;
                 car.ChangeDate = DateTime.Now;
 
                 _context.SaveChanges();

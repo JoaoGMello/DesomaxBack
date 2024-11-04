@@ -11,9 +11,10 @@
         public decimal Price { get; set; }
         public string? Image { get; set; }
         public string? Color { get; set; }
-        public string? Km { get; set; }
+        public decimal Km { get; set; }
         public string UserId { get; set; }
         public string Seller { get; set; }
+        public string EmailSeller { get; set; }
         public string City { get; set; }
         public string State { get; set; }
         public bool Like { get; set; }

@@ -10,7 +10,7 @@
         public decimal Price { get; set; }
         public string? Image { get; set; }
         public string? Color { get; set; }
-        public string? Km { get; set; }
+        public decimal Km { get; set; }
         public string UserId { get; set; }
     }
 }
